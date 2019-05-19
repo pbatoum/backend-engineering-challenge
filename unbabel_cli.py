@@ -118,7 +118,6 @@ if __name__ == '__main__':
     try:
         options, args = getopt.getopt(sys.argv[1:],'iwh', ["input_file=", 'window_size=', 'help'])
         for opt, value in options:
-            print(opt, value)
             if opt in ('-h', '--help'):
                 UsageExit()
             if opt in ('-i', '--input_file'):
